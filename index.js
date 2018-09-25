@@ -13,7 +13,7 @@ bot.on('message', (message) => {
             connection.disconnect();});
         }); 
     }
-
+    
     if (str.includes('i shouldnt')){sheev(0);}
 
     else if (str.includes('should')){sheev(Math.floor(2*Math.random()));}
@@ -24,6 +24,10 @@ bot.on('message', (message) => {
 
     else if (str.includes('power')){sheev(4);}
 
+    else if (str.includes('iv')){sheev(4);}
+
+    else if (str.includes('vi')){sheev(4);}
+
     else if (str.includes('rage')){sheev(5);}
 
     else if (str.includes('did you know')){sheev(6);} 
@@ -31,5 +35,3 @@ bot.on('message', (message) => {
     else if (str.includes('good')){sheev(7);} 
 
 });
-
-bot.login('');
